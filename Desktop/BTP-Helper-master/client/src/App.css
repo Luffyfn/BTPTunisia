@@ -1,0 +1,24 @@
+.login-form{
+  width: 50%;
+  background-color:#343a40;
+  margin: 15%;
+  padding: 1%;
+  color: white;
+}
+
+.button-form{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer{
+  background-color: #343a40;
+  position: sticky;
+  bottom: 100px;
+}
+
+.footer-p{
+  color: white;
+  text-align: center;
+  margin: 0;
+}

@@ -1,0 +1,4 @@
+{
+    "MONGO_URI":"mongodb+srv://admin:admin123@btptunisia-f0o2t.mongodb.net/btpTunisiaDB?retryWrites=true&w=majority",
+    "jwtSecret":"btpT_myJwtSecret"
+}
