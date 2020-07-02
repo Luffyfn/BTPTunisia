@@ -1,4 +1,4 @@
-const Moe = require('../models/moe.model');
+const Moe = require('../models/moe.model')
 
 const moeController = {};
 // Register moe
