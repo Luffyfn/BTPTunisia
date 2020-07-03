@@ -25,7 +25,7 @@ router.all('*', (req, res, next) => {
 });
 
 // Protected routes
-router.get('/moe', (req, res, next) => {
+router.get('/profile', (req, res, next) => {
     return res.send({ 
         message: "You are authenticated",
         moe: req.moe
