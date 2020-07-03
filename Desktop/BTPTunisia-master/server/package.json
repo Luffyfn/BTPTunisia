@@ -7,6 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon --exec node index.js"
   },
+  "repository": {
+    "type": "git",
+    "url":  "https://github.com/Luffyfn/BTPTunisia.git"
+  },
+ 
   "author": "Fares Nasfi and Khaoula Tti",
   "license": "MIT",
   "dependencies": {
@@ -20,6 +25,7 @@
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0"
   },
+
   "devDependencies": {
     "nodemon": "^2.0.4"
   }
