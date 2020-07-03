@@ -7,6 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon --exec node index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luffyfn/BTPTunisia"
+  },
   "author": "Fares Nasfi and Khaoula Tti",
   "license": "MIT",
   "dependencies": {
