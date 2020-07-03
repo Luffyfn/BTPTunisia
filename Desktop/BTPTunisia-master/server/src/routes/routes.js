@@ -9,6 +9,7 @@ const produitController = require("../controllers/produit.controller");
 router.post('/register', moeController.register);
 router.post('/login', moeController.login);
 router.get('/moe', moeController.get);
+router.get('/produits',produitController.getAll)
 
 // Customize and protect the routes
 router.all('*', (req, res, next) => {
