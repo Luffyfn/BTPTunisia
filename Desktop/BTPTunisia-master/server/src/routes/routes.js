@@ -4,12 +4,14 @@ const router = express.Router();
 
 const moeController = require("../controllers/moe.controller");
 const produitController = require("../controllers/produit.controller");
+const serviceController = require("../controllers/service.controller");
 
 // Auth and register
 router.post('/register', moeController.register);
 router.post('/login', moeController.login);
 router.get('/moe', moeController.get);
 router.get('/produits',produitController.getAll)
+router.get('/services',serviceController.getAll)
 
 // Customize and protect the routes
 router.all('*', (req, res, next) => {
@@ -32,14 +34,19 @@ router.get('/profile', (req, res, next) => {
         moe: req.moe
     });
 });
+router.put('/moe/:_id', moeController.update);
+router.delete('/moe/:_id', moeController.delete);
 
+router.get('/service', serviceController.get);
+router.post('/service', serviceController.create);
+router.put('/service/:_id', serviceController.update);
+router.delete('/service/:_id', serviceController.delete);
 
 router.get('/produit', produitController.get);
 router.post('/produit', produitController.create);
 router.put('/produit/:_id', produitController.update);
 router.delete('/produit/:_id', produitController.delete);
 
-router.put('/moe/:_id', moeController.update);
-router.delete('/moe/:_id', moeController.delete);
+
 
 module.exports = router;

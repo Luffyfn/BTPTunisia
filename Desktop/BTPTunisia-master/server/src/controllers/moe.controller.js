@@ -86,6 +86,14 @@ moeController.get = async(req, res, next) => {
     }
 }
 
+//Get profile
+moeController.getProfile = async(req,res,next) => {
+    return res.send({ 
+        message: "You are authenticated",
+        moe: req.moe
+    });
+}
+
 // Update moe
 moeController.update = async (req, res, next) => {
     const { _id } = req.params;
